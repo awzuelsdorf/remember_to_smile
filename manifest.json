@@ -1,0 +1,21 @@
+{
+	"name": "Remember to Smile",
+	"description": "This extension will ask you to consider visiting smile.amazon.com instead of www.amazon.com so that a portion of your eligible purchases' price will go towards a charitable organization of your choice.",
+	"version": "1.0.0",
+	"permissions": [
+	],
+        "homepage_url": "https://bitbucket.org/azuelsdorf16/phishing-boat/src/master/",
+	"content_scripts": [{
+		"matches": ["https://*/*"],
+		"js": ["remember_to_smile.js"]
+	}],
+	"manifest_version": 2,
+	"icons": {
+            "96" : "icon96x96.png"
+	},
+        "browser_specific_settings": {
+            "gecko": {
+                "id": "{053e09c4-6a58-473d-9de7-56a7a9c19236}"
+             }
+	}
+}
